@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="assets/CSS/style.css" media="all">
+
+  <link rel="stylesheet" href="assets/CSS/media.css">
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -13,22 +17,41 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+
 </head>
 <body>
 
-  Day
-  DD
+  <section class="data">
+    <p>Day
+    
+    <input type="number" id="dia" required>
+  </p>
 
-  Month
-  MM
+    <p>Month
+    
+    <input type="number" id="mes" required>
+  </p>
+    <p>Year
 
-  Year
-  YYYY
+    <input type="number" id="ano" required>
+  </p>
 
-  -- years
-  -- months
-  -- days
+
   
+  <input type="button" class="icone" onclick="idade()">
+  
+
+
+  </section>
+
+
+
+  <section id="res">
+    
+  </section>
+
+  <script src="assets/JS/script.js">
+  </script>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
