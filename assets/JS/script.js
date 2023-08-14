@@ -6,15 +6,15 @@ function idade(){
 
     var calcdata = new Date()
     var calcano = calcdata.getFullYear()
-    var calcmes = calcdata.getMonth()
-    var calcdia = calcdata.getDay()
+    var calcmes = calcdata.getMonth() 
+    var calcdia = calcdata.getDate()
 
     if (ano.value.length == 0 || Number(ano.value) > calcano) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')}
         else{
             var verAno = calcano - Number(ano.value)
             var verMes = calcmes - Number(mes.value) 
-            var verDia = calcdia - Number(dia.value)
+            var verDia = 31 + calcdia - Number(dia.value)
 
             resul.innerHTML = `<div>${verAno} <p>Years</p> <br>
             ${verMes} <p> Months </p> <br>
